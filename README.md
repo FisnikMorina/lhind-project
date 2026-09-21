@@ -46,13 +46,10 @@ pip install -r requirements.txt
 
 ## How to run
 
-Run the notebooks in order:
-
-1. `notebooks/eda.ipynb` — establishes the findings (per-pair trend, yearly seasonality,
-   store/product interaction) that motivate the modeling choices made next.
-2. `notebooks/modeling.ipynb` — fits the ARIMA base model, trains LightGBM on its residuals,
-   compares Grid Search vs. HyperOpt tuning, evaluates the final hybrid model on the 2019
-   held-out year, and logs every run to MLflow.
+Run the notebooks in order: 
+1. notebooks/eda.ipynb
+2. notebooks/modeling.ipynb
+3. notebooks/deep_learning.ipynb
 
 The EDA is used to understand the data before building the models.
 
